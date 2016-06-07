@@ -23,10 +23,3 @@ xtabs(~type, data_bl)
 data.plot = ggplot(data, aes(x = group, y = rt)) +
   geom_boxplot()
 data.plot
-## MAKE FIGURES ####
-# By group
-data.plot = ggplot(data, aes(x = group, y = rt)) +
-  geom_boxplot()
-pdf("figures/data.pdf")
-data.plot
-dev.off()
